@@ -1,0 +1,53 @@
+header {
+  background-color: #d62828;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.cart{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-icon{
+  padding: 0 40px;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+ul li {
+  display: inline;
+  font-weight: bold;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  color: #023047;
+}
+
+
+
+.summary{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}

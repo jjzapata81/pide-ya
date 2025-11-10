@@ -1,0 +1,16 @@
+<main>
+  <section id="gallery">
+    @for(product of products; track product){
+    <div class="item">
+      <span class="name">{{ product.name }}</span>
+      <img [src]="product.url" />
+      <span class="description">{{ product.description }}</span>
+      <span class="price">{{ product.price | currency }}</span>
+      <div class="actions">
+        <a href="">Agregar</a>
+        <a href="" class="remove">Remover</a>
+      </div>
+    </div>
+    }
+  </section>
+</main>
