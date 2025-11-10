@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { Product } from './entities/product.entity';
-import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class ProductsRepository {
