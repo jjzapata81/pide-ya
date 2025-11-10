@@ -8,10 +8,11 @@ export class OrdersRepository {
   orders: Order[] = [];
 
   create(orderData: Omit<Order, 'id'>): Order {
+    const id = Math.floor(Math.random()*10000).toString();
     const newOrder: Order = {
       ...orderData,
       status: OrderStatus.PENDING,
-      id: uuidv4(),
+      id
     };
     this.orders.push(newOrder);
     return newOrder;
